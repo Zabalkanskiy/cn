@@ -2,7 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :cn, Cn.Repo,
-  username: "postgres",
+  username: "postuser",
   password: "postgres",
   database: "cn_dev",
   hostname: "localhost",

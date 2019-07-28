@@ -11,6 +11,7 @@
                         'Elixir.CnWeb.LayoutView',
                         'Elixir.CnWeb.PageController','Elixir.CnWeb.PageView',
                         'Elixir.CnWeb.Router','Elixir.CnWeb.Router.Helpers',
+                        'Elixir.CnWeb.UserController',
                         'Elixir.CnWeb.UserSocket']},
               {registered,[]},
               {vsn,"0.1.0"},

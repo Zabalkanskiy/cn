@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :cn, Cn.Repo,
-  username: "postuser",
-  password: "postgres",
+  username: "postgres",
+  password: "",
   database: "cn_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

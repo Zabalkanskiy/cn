@@ -19,6 +19,7 @@ defmodule CnWeb.Router do
     get "/", PageController, :index
     get "/new", PageController, :new
     get "/user/:id", UserController, :index
+    get "/user/:id/:friend", UserController, :friend
   end
 
   # Other scopes may use custom stacks.

@@ -5,15 +5,15 @@ defmodule Cn.Social.Message do
   alias Cn.Social.Message
 
   schema "message" do
-    field :letter, :striing
+    field :letter, :string
 
     timestamps()
   end
 
   def changeset(%Message{}=message, attrs) do
     message
-    |>cast(attr,[:letter])
-    |>validate_required([:letter], opts \\ [])
+    |>cast(attrs,[:letter])
+    |>validate_required([:letter])
   end
 
 end

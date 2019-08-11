@@ -4,7 +4,7 @@ defmodule Cn.Social.People do
 
   alias Cn.Social.People
 
-  schema("people")do
+  schema("peoples")do
     field :name, :string
     field :surname, :string
     field :sex, :boolean

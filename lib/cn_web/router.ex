@@ -16,10 +16,15 @@ defmodule CnWeb.Router do
   scope "/", CnWeb do
     pipe_through :browser
 
+
     get "/", PageController, :index
     get "/new", PageController, :new
-    get "/user/:id", UserController, :index
+   # post "/create", PageController, :create
+    get "/users/:id", UserController, :show
+    post "/users", UserController, :create
     get "/user/:id/:friend", UserController, :friend
+    get "/people/new", PeopleController, :new
+    post "/create", PeopleController, :create
   end
 
   # Other scopes may use custom stacks.

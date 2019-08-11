@@ -1,0 +1,33 @@
+<div class="people-form">
+ <h2>New People</h2>
+ <%= form_for @people, people_path(@conn, :create), fn f -> %>
+   <label>
+     Name:<br />
+     <%= text_input f, :name %>
+   </label>
+   <br />
+   <label>
+     Surname<br />
+     <%= text_input f, :surname %>
+   </label>
+   <label>
+
+    Sex male true female false   <br/>
+    <%= radio_button  f, :sex, checked: "checked"%>
+   </label>
+   <label>
+    Country <br />
+    <%= text_input f, :country %>
+   </label> 
+   <label>
+    About <br/>
+    <%= text_input f, :about%>
+   </label>
+   <label>
+    City <br/>
+    <%= text_input f, :city %>
+   </label>
+   <br />
+   <%= submit "Create" %>
+ <% end %>
+</div>

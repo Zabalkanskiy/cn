@@ -24,9 +24,9 @@ end
   end
 
   test "all_people/0 return 1 people", %{user: user} do
-  people = people_fixture(%{user_id: user.id})
-  assert Social.all_people() = [people]
-end
+    people = people_fixture(%{user_id: user.id})
+    assert Social.all_people() = [people]
+  end
 
   test "new_people/0 return new blank changeset" do
   changeset = Social.new_people()
